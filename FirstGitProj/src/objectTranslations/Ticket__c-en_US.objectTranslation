@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please explain the issue or suggestion you wish to share. --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the device used when the issue or suggestion occurred. --></help>
+        <label><!-- Device --></label>
+        <name>Device__c</name>
+        <picklistValues>
+            <masterLabel>Laptop</masterLabel>
+            <translation><!-- Laptop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad</masterLabel>
+            <translation><!-- iPad --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the object in which you are experiencing the issue or concern. --></help>
+        <label><!-- Object Impacted --></label>
+        <name>ObjectImpacted__c</name>
+        <picklistValues>
+            <masterLabel>Accounts</masterLabel>
+            <translation><!-- Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calendar</masterLabel>
+            <translation><!-- Calendar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chatter</masterLabel>
+            <translation><!-- Chatter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacts</masterLabel>
+            <translation><!-- Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dashboards</masterLabel>
+            <translation><!-- Dashboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunities</masterLabel>
+            <translation><!-- Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Apps</masterLabel>
+            <translation><!-- Sales Apps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settings</masterLabel>
+            <translation><!-- Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tasks/Log A Call/Events</masterLabel>
+            <translation><!-- Tasks/Log A Call/Events --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If your request does not meet the Severity Level criteria as defined above, Support may re-classify it as appropriate. --></help>
+        <label><!-- Severity Level --></label>
+        <name>Severity_Level__c</name>
+        <picklistValues>
+            <masterLabel>Level 1 - Critical</masterLabel>
+            <translation><!-- Level 1 - Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 2 - Urgent</masterLabel>
+            <translation><!-- Level 2 - Urgent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 3 - High</masterLabel>
+            <translation><!-- Level 3 - High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 4 - Normal</masterLabel>
+            <translation><!-- Level 4 - Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 5 - Minimal</masterLabel>
+            <translation><!-- Level 5 - Minimal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Status of your Ticket --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending User</masterLabel>
+            <translation><!-- Pending User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Opened</masterLabel>
+            <translation><!-- Re-Opened --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving</masterLabel>
+            <translation><!-- Resolving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transferred</masterLabel>
+            <translation><!-- Transferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Review</masterLabel>
+            <translation><!-- Under Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter a subject for this ticket. --></help>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Issue --></label>
+        <name>Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Suggestion --></label>
+        <name>Suggestion</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

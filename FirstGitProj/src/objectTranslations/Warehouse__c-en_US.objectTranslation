@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plant</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plants</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dispatch Email --></label>
+        <name>Dispatch_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Code --></label>
+        <name>Facility_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Facility (parent location) that this warehouse or plant belongs to --></help>
+        <label><!-- Facility --></label>
+        <name>Facility__c</name>
+        <relationshipLabel><!-- Plants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours of Operation --></label>
+        <name>Hours_of_Operation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who is the Logistics Coordinator for this Warehouse? --></help>
+        <label><!-- Logistics Coordinator --></label>
+        <name>Logistics_Coordinator__c</name>
+        <relationshipLabel><!-- Plants --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check this box if the warehouse or plant is no longer active. --></help>
+        <label><!-- Obsolete --></label>
+        <name>Obsolete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone 1 --></label>
+        <name>Phone_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Code --></label>
+        <name>Plant_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Description --></label>
+        <name>Plant_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Area --></label>
+        <name>Price_Area__c</name>
+        <relationshipLabel><!-- Plants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Org --></label>
+        <name>Sales_Org__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Code External Id --></label>
+        <name>Warehouse_Code_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Warehouse_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Manager Email --></label>
+        <name>Warehouse_Manager_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Warehouse_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Zip_Code__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Warehouse Code may not be changed. --></errorMessage>
+        <name>No_Change_to_Warehouse_Code</name>
+    </validationRules>
+</CustomObjectTranslation>

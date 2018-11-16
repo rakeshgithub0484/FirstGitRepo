@@ -1,0 +1,2308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>General Case</fullName>
+        <description>These were &quot;Activities&quot; previously. Use this for all incoming calls/emails that don&apos;t warrant a Service Case.</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Customer_Master_Layout</fullName>
+        <fields>CaseNumber</fields>
+        <fields>Type</fields>
+        <fields>OwnerId</fields>
+        <fields>Status</fields>
+        <label>Customer Master Layout</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CSR__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>CSR</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cases3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Change_Info_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Change Info Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Cases (Change Info Account)</relationshipLabel>
+        <relationshipName>Cases2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Customer_Master_Request_Status__c</fullName>
+        <description>This field will be used to store the current status of Customer Master Request  and will be used in Criterias</description>
+        <externalId>false</externalId>
+        <label>Customer Master Request Status</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>EngineeringReqNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Engineering Req Number</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PartnerTo_UnPartner_from_Sold_To_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PartnerTo_UnPartner from Sold-To Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Cases (PartnerTo_UnPartner from Sold-To Account)</relationshipLabel>
+        <relationshipName>Cases1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PotentialLiability__c</fullName>
+        <externalId>false</externalId>
+        <label>Potential Liability</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GC1040</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GC1060</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GC3020</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GC3040</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GC3060</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GC5020</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GC5040</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GC5060</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GC1020</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ReportedPersonPhNo__c</fullName>
+        <externalId>false</externalId>
+        <label>ReportedPersonPhNo</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Resolution__c</fullName>
+        <externalId>false</externalId>
+        <label>Action</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>SubType__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Will Keep – Inv Adj Needed No Price Adj Needed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Will Keep – No Price Adj Needed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Will Keep - Price Adj Needed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Will Keep – Price and Inv Adj Needed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General Case</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Information Only - No Action</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Issue Credit/Debit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reconsignment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>RMA</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Product Quantity</controllingFieldValue>
+                <controllingFieldValue>Sample/Wishlist</controllingFieldValue>
+                <controllingFieldValue>Ship via Error (TL vs CPU) - Other</controllingFieldValue>
+                <controllingFieldValue>Quality Issue</controllingFieldValue>
+                <controllingFieldValue>Solar</controllingFieldValue>
+                <controllingFieldValue>Quote Activation</controllingFieldValue>
+                <controllingFieldValue>Sourced Product</controllingFieldValue>
+                <controllingFieldValue>Removed Product</controllingFieldValue>
+                <controllingFieldValue>Request for Reserve</controllingFieldValue>
+                <controllingFieldValue>Resent Confirmation</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Color</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong P.O. #</controllingFieldValue>
+                <controllingFieldValue>ATP</controllingFieldValue>
+                <controllingFieldValue>Special Handling</controllingFieldValue>
+                <controllingFieldValue>Carrier</controllingFieldValue>
+                <controllingFieldValue>Carrier Issue</controllingFieldValue>
+                <controllingFieldValue>Truck Weight Issue</controllingFieldValue>
+                <controllingFieldValue>Damaged Product</controllingFieldValue>
+                <controllingFieldValue>Deleted Bill to/Ship to</controllingFieldValue>
+                <controllingFieldValue>Warehouse/Shipping</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Other</controllingFieldValue>
+                <controllingFieldValue>Duplicate Not Caught</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - CSR</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Cust</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Plant</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - TS</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - TS</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - TS</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product - Carrier</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Sales</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Sales</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Sales</controllingFieldValue>
+                <controllingFieldValue>Product Conversion Issue</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - System</controllingFieldValue>
+                <controllingFieldValue>Job Quote / Contract Code</controllingFieldValue>
+                <controllingFieldValue>Job Site Info Needed</controllingFieldValue>
+                <controllingFieldValue>Late/Early Shipment</controllingFieldValue>
+                <controllingFieldValue>LTL</controllingFieldValue>
+                <controllingFieldValue>Made Hot</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes - Other</controllingFieldValue>
+                <controllingFieldValue>New Bill to</controllingFieldValue>
+                <controllingFieldValue>Order Header Issue</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Other</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Revised Bill to/Ship to</controllingFieldValue>
+                <controllingFieldValue>Revised P.O.#</controllingFieldValue>
+                <controllingFieldValue>Sales Request</controllingFieldValue>
+                <controllingFieldValue>Past Due Order</controllingFieldValue>
+                <valueName>Customer Will Keep - Price Adj Needed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product Quantity</controllingFieldValue>
+                <controllingFieldValue>Push Out Past Dues</controllingFieldValue>
+                <controllingFieldValue>Samples</controllingFieldValue>
+                <controllingFieldValue>Sample/Wishlist</controllingFieldValue>
+                <controllingFieldValue>Ship Date</controllingFieldValue>
+                <controllingFieldValue>Ship to Address</controllingFieldValue>
+                <controllingFieldValue>Ship via Error (TL vs CPU) - Other</controllingFieldValue>
+                <controllingFieldValue>Solar</controllingFieldValue>
+                <controllingFieldValue>Sourced Product</controllingFieldValue>
+                <controllingFieldValue>Released from Hold</controllingFieldValue>
+                <controllingFieldValue>Changed Request Date</controllingFieldValue>
+                <controllingFieldValue>Resent Confirmation</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Equip Code</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Product</controllingFieldValue>
+                <controllingFieldValue>Sourced from another plant due to stock out</controllingFieldValue>
+                <controllingFieldValue>ATP</controllingFieldValue>
+                <controllingFieldValue>Carrier</controllingFieldValue>
+                <controllingFieldValue>Technical Issues</controllingFieldValue>
+                <controllingFieldValue>Carrier Issue</controllingFieldValue>
+                <controllingFieldValue>Territory Manager</controllingFieldValue>
+                <controllingFieldValue>Test Order</controllingFieldValue>
+                <controllingFieldValue>Changed from TL to CPU</controllingFieldValue>
+                <controllingFieldValue>Changed to CL</controllingFieldValue>
+                <controllingFieldValue>Vary Needed – too heavy or too light</controllingFieldValue>
+                <controllingFieldValue>Damaged Product</controllingFieldValue>
+                <controllingFieldValue>Warranty Department</controllingFieldValue>
+                <controllingFieldValue>Winter Incentive</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Customer</controllingFieldValue>
+                <controllingFieldValue>Wrong Order-For</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Other</controllingFieldValue>
+                <controllingFieldValue>Deleted Ship to</controllingFieldValue>
+                <controllingFieldValue>Due to Shipping Issues</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product - Carrier</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - System</controllingFieldValue>
+                <controllingFieldValue>Job Quote / Contract Code</controllingFieldValue>
+                <controllingFieldValue>Job Site Info Needed</controllingFieldValue>
+                <controllingFieldValue>LTL Freight Quote</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes - Other</controllingFieldValue>
+                <controllingFieldValue>New</controllingFieldValue>
+                <controllingFieldValue>Order Notes</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Other</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Revised P.O.#</controllingFieldValue>
+                <controllingFieldValue>Revised Ship to</controllingFieldValue>
+                <controllingFieldValue>RMA Approval</controllingFieldValue>
+                <controllingFieldValue>Out of Stock</controllingFieldValue>
+                <controllingFieldValue>Sales Support</controllingFieldValue>
+                <controllingFieldValue>Past Due Order</controllingFieldValue>
+                <controllingFieldValue>POD/BOL</controllingFieldValue>
+                <valueName>Customer Will Keep – Price and Inv Adj Needed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Push Out Past Dues</controllingFieldValue>
+                <controllingFieldValue>Ship Date</controllingFieldValue>
+                <controllingFieldValue>Solar</controllingFieldValue>
+                <controllingFieldValue>Reserve</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Ordered For</controllingFieldValue>
+                <controllingFieldValue>Sourced from another plant due to stock out</controllingFieldValue>
+                <controllingFieldValue>Special Buy/Pricing Issue</controllingFieldValue>
+                <controllingFieldValue>Special Handling</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Quantity</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Ship Date</controllingFieldValue>
+                <controllingFieldValue>Warehouse/Shipping</controllingFieldValue>
+                <controllingFieldValue>Winter Incentive</controllingFieldValue>
+                <controllingFieldValue>Wrong Customer</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - CSR</controllingFieldValue>
+                <controllingFieldValue>Junk Case</controllingFieldValue>
+                <controllingFieldValue>New</controllingFieldValue>
+                <controllingFieldValue>Revised Ship to</controllingFieldValue>
+                <controllingFieldValue>RMA Approval</controllingFieldValue>
+                <controllingFieldValue>Rush 48 Hours</controllingFieldValue>
+                <controllingFieldValue>Out of Stock</controllingFieldValue>
+                <controllingFieldValue>POD/BOL</controllingFieldValue>
+                <valueName>General Case</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Samples</controllingFieldValue>
+                <controllingFieldValue>Secured Resupply</controllingFieldValue>
+                <controllingFieldValue>Ship to Address</controllingFieldValue>
+                <controllingFieldValue>Ship via Error (TL vs CPU) - Other</controllingFieldValue>
+                <controllingFieldValue>Quality Issue</controllingFieldValue>
+                <controllingFieldValue>Quote Activation</controllingFieldValue>
+                <controllingFieldValue>Quote Update</controllingFieldValue>
+                <controllingFieldValue>Request for Reserve</controllingFieldValue>
+                <controllingFieldValue>Copying Error</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Plant</controllingFieldValue>
+                <controllingFieldValue>AR vs non AR</controllingFieldValue>
+                <controllingFieldValue>Special Handling (HOT)</controllingFieldValue>
+                <controllingFieldValue>Carrier</controllingFieldValue>
+                <controllingFieldValue>Carrier Issue</controllingFieldValue>
+                <controllingFieldValue>Changed/Added Product</controllingFieldValue>
+                <controllingFieldValue>Test Order</controllingFieldValue>
+                <controllingFieldValue>Changed from CPU to TL</controllingFieldValue>
+                <controllingFieldValue>Truck Weight Issue</controllingFieldValue>
+                <controllingFieldValue>Vary Needed – too heavy or too light</controllingFieldValue>
+                <controllingFieldValue>Changed Quantity</controllingFieldValue>
+                <controllingFieldValue>Damaged Product</controllingFieldValue>
+                <controllingFieldValue>Deleted Bill to</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Other</controllingFieldValue>
+                <controllingFieldValue>Duplicate Not Caught</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - CSR</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Cust</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Plant</controllingFieldValue>
+                <controllingFieldValue>CC&apos;d Order</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - TS</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - TS</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - TS</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product - Carrier</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Sales</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Sales</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Sales</controllingFieldValue>
+                <controllingFieldValue>Product Conversion Issue</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - System</controllingFieldValue>
+                <controllingFieldValue>Job Site</controllingFieldValue>
+                <controllingFieldValue>Late/Early Shipment</controllingFieldValue>
+                <controllingFieldValue>LTL</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes - Other</controllingFieldValue>
+                <controllingFieldValue>N/A</controllingFieldValue>
+                <controllingFieldValue>New Ship to</controllingFieldValue>
+                <controllingFieldValue>Order Header Issue</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Other</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Revised Bill to/Ship to</controllingFieldValue>
+                <controllingFieldValue>Rush 48 Hours (HOT)</controllingFieldValue>
+                <controllingFieldValue>Out of Region Product Ordered</controllingFieldValue>
+                <controllingFieldValue>Sales Request</controllingFieldValue>
+                <controllingFieldValue>Overstocked</controllingFieldValue>
+                <controllingFieldValue>Past Due Order</controllingFieldValue>
+                <controllingFieldValue>Product Issues</controllingFieldValue>
+                <valueName>Customer Will Keep – No Price Adj Needed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Secured Resupply</controllingFieldValue>
+                <controllingFieldValue>Ship via Error (TL vs CPU) - Other</controllingFieldValue>
+                <controllingFieldValue>Quality Issue</controllingFieldValue>
+                <controllingFieldValue>Solar</controllingFieldValue>
+                <controllingFieldValue>Quote Confirmation</controllingFieldValue>
+                <controllingFieldValue>Removed Product</controllingFieldValue>
+                <controllingFieldValue>Claim</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Order For</controllingFieldValue>
+                <controllingFieldValue>AR vs non AR</controllingFieldValue>
+                <controllingFieldValue>Special Handling (HOT)</controllingFieldValue>
+                <controllingFieldValue>Carrier</controllingFieldValue>
+                <controllingFieldValue>Technical Issues</controllingFieldValue>
+                <controllingFieldValue>Carrier Issue</controllingFieldValue>
+                <controllingFieldValue>Territory Manager</controllingFieldValue>
+                <controllingFieldValue>Changed/Added Product</controllingFieldValue>
+                <controllingFieldValue>Customer Service</controllingFieldValue>
+                <controllingFieldValue>Damaged Product</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Other</controllingFieldValue>
+                <controllingFieldValue>Donation</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Other</controllingFieldValue>
+                <controllingFieldValue>ETA</controllingFieldValue>
+                <controllingFieldValue>CC&apos;d Order</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product - Carrier</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity Confirmed</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - System</controllingFieldValue>
+                <controllingFieldValue>Job Site</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes - Other</controllingFieldValue>
+                <controllingFieldValue>New Ship to</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Other</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Rush 48 Hours (HOT)</controllingFieldValue>
+                <controllingFieldValue>Rush 48 Hours</controllingFieldValue>
+                <controllingFieldValue>Overstocked</controllingFieldValue>
+                <controllingFieldValue>Product Issues</controllingFieldValue>
+                <valueName>Customer Will Keep – Inv Adj Needed No Price Adj Needed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ship via Error (CPU vs TL)</controllingFieldValue>
+                <controllingFieldValue>Ship via Error (TL vs CPU)</controllingFieldValue>
+                <controllingFieldValue>Ship via Error (TL vs CPU) - Other</controllingFieldValue>
+                <controllingFieldValue>Quality Issue</controllingFieldValue>
+                <controllingFieldValue>Solar</controllingFieldValue>
+                <controllingFieldValue>Reserve</controllingFieldValue>
+                <controllingFieldValue>Special Buy/Pricing Issue</controllingFieldValue>
+                <controllingFieldValue>Truck Weight Issue</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Ship To</controllingFieldValue>
+                <controllingFieldValue>Damaged Product</controllingFieldValue>
+                <controllingFieldValue>Warranty Department</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Order-For</controllingFieldValue>
+                <controllingFieldValue>Wrong Plant</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Other</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Other</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - TS</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - TS</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - TS</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product - Carrier</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity Confirmed</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Sales</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Sales</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Sales</controllingFieldValue>
+                <controllingFieldValue>Product Conversion Issue</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - System</controllingFieldValue>
+                <controllingFieldValue>Junk Case</controllingFieldValue>
+                <controllingFieldValue>Late/Early Shipment</controllingFieldValue>
+                <controllingFieldValue>LTL Freight Quote</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes - Other</controllingFieldValue>
+                <controllingFieldValue>Missing or Stolen Product</controllingFieldValue>
+                <controllingFieldValue>New Bill to</controllingFieldValue>
+                <controllingFieldValue>Open Order Report</controllingFieldValue>
+                <controllingFieldValue>Order Header Issue</controllingFieldValue>
+                <controllingFieldValue>Order Notes</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Other</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Re-sourcing</controllingFieldValue>
+                <controllingFieldValue>Out of Stock</controllingFieldValue>
+                <controllingFieldValue>POD/BOL</controllingFieldValue>
+                <controllingFieldValue>Pricing</controllingFieldValue>
+                <valueName>Information Only - No Action</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ship via Error (TL vs CPU)</controllingFieldValue>
+                <controllingFieldValue>Put Order on Hold</controllingFieldValue>
+                <controllingFieldValue>Ship via Error (TL vs CPU) - Other</controllingFieldValue>
+                <controllingFieldValue>Quality Issue</controllingFieldValue>
+                <controllingFieldValue>Solar</controllingFieldValue>
+                <controllingFieldValue>Truck Weight Issue</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Ship Via</controllingFieldValue>
+                <controllingFieldValue>Damaged Product</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Other</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Plant</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - TS</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - TS</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - TS</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product - Carrier</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity Confirmed</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Sales</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Sales</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Sales</controllingFieldValue>
+                <controllingFieldValue>Product Conversion Issue</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - System</controllingFieldValue>
+                <controllingFieldValue>Invalid Date - System</controllingFieldValue>
+                <controllingFieldValue>Late/Early Shipment</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes - Other</controllingFieldValue>
+                <controllingFieldValue>Missing or Stolen Product</controllingFieldValue>
+                <controllingFieldValue>Open Order Report</controllingFieldValue>
+                <controllingFieldValue>Order Header Issue</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge)</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Other</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Re-sourcing</controllingFieldValue>
+                <controllingFieldValue>Revised Bill to</controllingFieldValue>
+                <controllingFieldValue>Out of Region Product Ordered</controllingFieldValue>
+                <controllingFieldValue>Pricing</controllingFieldValue>
+                <valueName>Issue Credit/Debit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ship via Error (TL vs CPU)</controllingFieldValue>
+                <controllingFieldValue>Put Order on Hold</controllingFieldValue>
+                <controllingFieldValue>Ship via Error (TL vs CPU) - Other</controllingFieldValue>
+                <controllingFieldValue>Solar</controllingFieldValue>
+                <controllingFieldValue>Truck Weight Issue</controllingFieldValue>
+                <controllingFieldValue>CSR Entered Wrong Weight</controllingFieldValue>
+                <controllingFieldValue>Damaged Product</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Other</controllingFieldValue>
+                <controllingFieldValue>Duplicate Not Caught</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - CSR</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Cust</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Plant</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - TS</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - TS</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - TS</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect EDI Number</controllingFieldValue>
+                <controllingFieldValue>Incorrect Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product - Carrier</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Sales</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Sales</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Sales</controllingFieldValue>
+                <controllingFieldValue>Product Conversion Issue</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - System</controllingFieldValue>
+                <controllingFieldValue>Late Delivery</controllingFieldValue>
+                <controllingFieldValue>Late/Early Shipment</controllingFieldValue>
+                <controllingFieldValue>Made Hot</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes - Other</controllingFieldValue>
+                <controllingFieldValue>Order Header Issue</controllingFieldValue>
+                <controllingFieldValue>Order Tracking/Status</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge)</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Other</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Product Type</controllingFieldValue>
+                <valueName>Reconsignment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ship via Error (TL vs CPU)</controllingFieldValue>
+                <controllingFieldValue>Ship via Error (TL vs CPU) - Other</controllingFieldValue>
+                <controllingFieldValue>Quality Issue</controllingFieldValue>
+                <controllingFieldValue>Solar</controllingFieldValue>
+                <controllingFieldValue>TL vs CPU</controllingFieldValue>
+                <controllingFieldValue>Truck Weight Issue</controllingFieldValue>
+                <controllingFieldValue>Customer Request</controllingFieldValue>
+                <controllingFieldValue>Damaged Product</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Other</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Other</controllingFieldValue>
+                <controllingFieldValue>Duplicate Not Caught</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - CSR</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Cust</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Other</controllingFieldValue>
+                <controllingFieldValue>Illegible</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Plant</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - TS</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - TS</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - TS</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - TS</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - TS</controllingFieldValue>
+                <controllingFieldValue>Duplicate Order - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product - Carrier</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - CSR</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - Sales</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Sales</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Sales</controllingFieldValue>
+                <controllingFieldValue>Ship Via Error (TL vs CPU) - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Bill To - Sales</controllingFieldValue>
+                <controllingFieldValue>Wrong Ship To - Sales</controllingFieldValue>
+                <controllingFieldValue>Product Conversion Issue</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Other</controllingFieldValue>
+                <controllingFieldValue>Incorrect Quantity - Plant</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date</controllingFieldValue>
+                <controllingFieldValue>Incorrect Ship Date - Cust</controllingFieldValue>
+                <controllingFieldValue>Incorrect Product/Color - System</controllingFieldValue>
+                <controllingFieldValue>Late Delivery</controllingFieldValue>
+                <controllingFieldValue>Late/Early Shipment</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes</controllingFieldValue>
+                <controllingFieldValue>Missing Contract/Program Codes - Other</controllingFieldValue>
+                <controllingFieldValue>Order Header Issue</controllingFieldValue>
+                <controllingFieldValue>Order Tracking/Status</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge)</controllingFieldValue>
+                <controllingFieldValue>Order Type (RG vs No Charge) - Other</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Revised Bill to</controllingFieldValue>
+                <controllingFieldValue>Product Type</controllingFieldValue>
+                <valueName>RMA</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SLAViolation__c</fullName>
+        <externalId>false</externalId>
+        <label>SLA Violation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SubType__c</fullName>
+        <externalId>false</externalId>
+        <label>SubType</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AR vs non AR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ATP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Carrier</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Carrier Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Changed/Added Product</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Changed from CPU to TL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Changed from TL to CPU</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Changed to CL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Changed Quantity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Changed Request Date</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Claim</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Copying Error</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Color</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Equip Code</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Ordered For</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Order For</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Plant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong P.O. #</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Product</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Quantity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Ship Date</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Ship To</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Ship Via</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CSR Entered Wrong Weight</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Request</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Damaged Product</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deleted Bill to</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deleted Bill to/Ship to</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deleted Ship to</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Donation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Due to Shipping Issues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Duplicate Not Caught</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Duplicate Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Duplicate Order - CSR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Duplicate Order - Cust</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Duplicate Order - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ETA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Illegible</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect EDI Number</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Plant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Product - Carrier</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Product/Color - CSR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Product/Color - Cust</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Product/Color - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Product/Color - Plant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Quantity Confirmed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Quantity - CSR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Quantity - Cust</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Quantity - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Quantity - Plant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Ship Date</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Ship Date - Cust</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Product/Color - System</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Invalid Date - System</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Job Quote / Contract Code</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Job Site</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Job Site Info Needed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Junk Case</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Late Delivery</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Late/Early Shipment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LTL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LTL Freight Quote</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Made Hot</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Missing Contract/Program Codes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Missing Contract/Program Codes - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Missing or Stolen Product</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New Bill to</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New Bill to/Ship to</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New Ship to</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Open Order Report</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Order Header Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Order Notes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Order Tracking/Status</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Order Type (RG vs No Charge)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Order Type (RG vs No Charge) - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Out of Region Product Ordered</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Out of Stock</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Overstocked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Past Due Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>POD/BOL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pricing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Type</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Issues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Quantity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Push Out Past Dues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Put Order on Hold</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quality Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quote Activation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quote Confirmation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quote Update</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Released from Hold</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Removed Product</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Request for Reserve</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Resent Confirmation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reserve</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Re-sourcing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Revised Bill to</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Revised Bill to/Ship to</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Revised P.O.#</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Revised Ship to</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>RMA Approval</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rush 48 Hours (HOT)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rush 48 Hours</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales Request</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales Support</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Samples</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sample/Wishlist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Secured Resupply</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ship Date</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ship to Address</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ship via Error (CPU vs TL)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ship via Error (TL vs CPU)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ship via Error (TL vs CPU) - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sourced Product</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sourced from another plant due to stock out</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Special Buy/Pricing Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Special Handling (HOT)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Special Handling</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technical Issues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Territory Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Test Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TL vs CPU</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Truck Weight Issue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vary Needed – too heavy or too light</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Warehouse/Shipping</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Warranty Department</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Winter Incentive</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Bill To</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Bill To - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Customer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Order-For</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Plant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Ship To</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Ship To - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Ship To - Plant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CC&apos;d Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Duplicate Order - TS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Product/Color - TS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Quantity - TS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Order Type (RG vs No Charge) - TS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ship Via Error (TL vs CPU) - TS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Bill To - TS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Ship To - TS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Duplicate Order - Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Product/Color - Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incorrect Quantity - Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Order Type (RG vs No Charge) - Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ship Via Error (TL vs CPU) - Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Bill To - Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong Ship To - Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Conversion Issue</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Damaged Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Duplicate Order - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Incorrect Product/Color - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Incorrect Quantity - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Missing Contract/Program Codes - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Order Type (RG vs No Charge) - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Ship via Error (TL vs CPU) - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Wrong Bill To - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Wrong Ship To - Other</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Territory_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Territory Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cases2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>isSubmitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is to identify whether customer master onboarding request is submitted or not</description>
+        <externalId>false</externalId>
+        <label>isSubmitted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>AllClosedCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Closed Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Customer_Master_Request</fullName>
+        <active>true</active>
+        <businessProcess>General Case</businessProcess>
+        <compactLayoutAssignment>Customer_Master_Layout</compactLayoutAssignment>
+        <description>This record type is to capture customer on-boarding request</description>
+        <label>Customer Master Request</label>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PotentialLiability__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>GC1020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5060</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resolution__c</picklist>
+            <values>
+                <fullName>General Case</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SLAViolation__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SubType__c</picklist>
+            <values>
+                <fullName>AR vs non AR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ATP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CC%27d Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Color</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Equip Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Order For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Ordered For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong P%2EO%2E %23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Plant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Quantity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Ship Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Ship To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Ship Via</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSR Entered Wrong Weight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changed Quantity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changed Request Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changed from CPU to TL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changed from TL to CPU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changed to CL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changed%2FAdded Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Claim</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copying Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted Bill to</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted Bill to%2FShip to</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted Ship to</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Donation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to Shipping Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ETA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illegible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect EDI Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Product%2FColor - Plant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Quantity - Plant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Quote %2F Contract Code</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Site Info Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junk Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTL Freight Quote</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Made Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Contract%2FProgram Codes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Bill to</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Bill to%2FShip to</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Ship to</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open Order Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Notes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Tracking%2FStatus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Type %28RG vs No Charge%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Region Product Ordered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Stock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overstocked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POD%2FBOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Quantity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Push Out Past Dues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Put Order on Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Activation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Confirmation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-sourcing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Released from Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Removed Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request for Reserve</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resent Confirmation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reserve</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Revised Bill to</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Revised Bill to%2FShip to</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Revised P%2EO%2E%23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Revised Ship to</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rush 48 Hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rush 48 Hours %28HOT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample%2FWishlist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secured Resupply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship Date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship to Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship via Error %28TL vs CPU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sourced Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sourced from another plant due to stock out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Buy%2FPricing Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Handling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Handling %28HOT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TL vs CPU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Territory Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vary Needed %E2%80%93 too heavy or too light</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouse%2FShipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warranty Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Winter Incentive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Bill To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Order-For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Plant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Ship To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>UpsellCrosssellOpportunity</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Up-sell / Cross-sell Opportunity</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>https://na1.salesforce.com/opp/oppedit.jsp?accid={!Account_ID}&amp;opp3=Up-sell+/+Cross-sell&amp;opp5=Existing+Customer&amp;opp6=Customer+Support</url>
+    </webLinks>
+</CustomObject>
