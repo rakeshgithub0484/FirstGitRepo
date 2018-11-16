@@ -6,7 +6,7 @@
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Price Area</value>
+        <value>Price Areas</value>
     </caseValues>
     <fields>
         <label><!-- Price Area _Territory --></label>
