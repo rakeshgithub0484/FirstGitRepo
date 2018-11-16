@@ -6,7 +6,7 @@
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Tickets</value>
+        <value>Ticket</value>
     </caseValues>
     <fields>
         <help><!-- Please explain the issue or suggestion you wish to share. --></help>
