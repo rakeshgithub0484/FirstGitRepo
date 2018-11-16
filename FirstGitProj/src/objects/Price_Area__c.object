@@ -115,7 +115,7 @@
             <operation>contains</operation>
             <value>price</value>
         </filters>
-        <label>Price Sheets</label>
+        <label>Price Sheet</label>
     </listViews>
     <nameField>
         <label>Price Area</label>
